@@ -1,0 +1,223 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin: 0px;
+    background: linear-gradient(-135deg, #c850c0, #4158d0) fixed;
+}
+
+.container {
+    max-width: 688px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.header {
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+}
+
+.header__title {
+    font-size: 30px;
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+    text-transform: uppercase;
+}
+
+.header__description {
+    font-size: 18px;
+    color: #fff;
+}
+
+.survey-form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.survey-form__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 25px 0px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+.survey-form__label {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.survey-form__name,
+.survey-form__email,
+.survey-form__age,
+.survey-form__gender,
+.survey-form__reason,
+.survey-form__textarea {
+    min-height: 35px;
+    font-family: 'Plus Jakarta Sans';
+    border: transparent;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    padding-left: 10px;
+}
+
+.survey-form__name:focus,
+.survey-form__email:focus,
+.survey-form__age:focus,
+.survey-form__gender:focus,
+.survey-form__reason:focus,
+.survey-form__textarea:focus {
+    outline: 2px solid #6600e3;
+}
+
+.survey-form__gender,
+.survey-form__reason {
+    font-size: 16px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 16px;
+    color: gray;
+}
+
+::-moz-placeholder {
+    font-size: 16px;
+    color: gray;
+}
+
+:-moz-placeholder {
+    font-size: 16px;
+    color: gray;
+}
+
+:-ms-input-placeholder {
+    font-size: 16px;
+    color: gray;
+}
+
+.survey-form__question {
+    font-weight: 700;
+    margin: 0px 0px 8px 0px;
+}
+
+.survey-form__foundus,
+.survey-form__quality,
+.survey-form__web {
+    margin-right: 10px;
+}
+
+textarea {
+    resize: none;
+    padding-top: 10px;
+}
+
+.survey-form__button {
+    display: flex;
+    justify-content: center;
+}
+
+.survey-form__button button {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 700;
+    border: transparent;
+    border-radius: 5px;
+    background-color: #57b846;
+    color: white;
+    min-height: 40px;
+    min-width: 200px;
+}
+
+.survey-form__button button:hover {
+    background-color: #333;
+}
+
+@media (max-width:452px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header__title {
+        font-size: 26px;
+    }
+
+    .header__description {
+        font-size: 16px;
+    }
+
+    .survey-form__gender,
+    .survey-form__reason {
+        font-size: 14px;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+
+    ::-moz-placeholder {
+        font-size: 14px;
+    }
+
+    :-moz-placeholder {
+        font-size: 14px;
+    }
+
+    :-ms-input-placeholder {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:400px) {
+    body {
+        font-size: 12px;
+    }
+
+    .header__title {
+        font-size: 24px;
+    }
+
+    .header__description {
+        font-size: 14px;
+    }
+
+    .survey-form__gender,
+    .survey-form__reason {
+        font-size: 12px;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+
+    ::-moz-placeholder {
+        font-size: 12px;
+    }
+
+    :-moz-placeholder {
+        font-size: 12px;
+    }
+
+    :-ms-input-placeholder {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h1 class="header__title" id="title">
+                Survey Form
+            </h1>
+            <p class="header__description" id="description">
+                Thank you for taking the time to complete the survey. The responses from this survey will be used to
+                improve the functionality of our website
+            </p>
+        </header>
+
+        <form action="#" class="survey-form" id="survey-form">
+
+            <div class="survey-form__item">
+                <label for="name" class="survey-form__label" id="name-label">Name</label>
+                <input type="text" class="survey-form__name" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="survey-form__item">
+                <label for="email" class="survey-form__label" id="email-label">Email</label>
+                <input type="email" class="survey-form__email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="survey-form__item">
+                <label for="number" class="survey-form__label" id="number-label">Age (optional)</label>
+                <input type="number" class="survey-form__age" id="number" min="0" max="100" placeholder="Age">
+            </div>
+
+            <div class="survey-form__item">
+                <p class="survey-form__question">What is your gender?</p>
+                <select name="gender" class="survey-form__gender" id="dropdown">
+                    <option disabled selected>Select gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="survey-form__item">
+                <p class="survey-form__question">How did you find out about the website?</p>
+                <label>
+                    <input type="radio" name="foundus" value="Followed link from another web page"
+                        class="survey-form__foundus">Followed link from another web page
+                </label>
+                <label>
+                    <input type="radio" name="foundus" value="Followed a graphical banner/icon from another web page"
+                        class="survey-form__foundus">Followed a graphical banner
+                </label>
+                <label>
+                    <input type="radio" name="foundus" value="Found by using a search engine"
+                        class="survey-form__foundus">Found by using a search engine
+                </label>
+                <label>
+                    <input type="radio" name="foundus" value="Received e-mail" class="survey-form__foundus">Received
+                    e-mail
+                </label>
+                <label>
+                    <input type="radio" name="foundus" value="Was told URL by friend" class="survey-form__foundus">Was
+                    told URL by friend
+                </label>
+                <label>
+                    <input type="radio" name="foundus" value="Read about it in newspaper/magazine"
+                        class="survey-form__foundus">Read about it in newspaper/magazine
+                </label>
+                <label>
+                    <input type="radio" name="foundus" value="Don't remember" class="survey-form__foundus">Don't
+                    remember
+                </label>
+                <label>
+                    <input type="radio" name="foundus" value="Other" class="survey-form__foundus">Other
+                </label>
+            </div>
+
+            <div class="survey-form__item">
+                <p class="survey-form__question">What are your reasons for visiting our site today?</p>
+                <select name="reason" class="survey-form__reason" id="reason">
+                    <option disabled selected>Select an option</option>
+                    <option value="Product information">Product information</option>
+                    <option value="Technical support information">Technical support information</option>
+                    <option value="Competitive information">Competitive information</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="survey-form__item">
+                <p class="survey-form__question">Based on your experience, how would you rate the quality of this
+                    website?</p>
+                <label>
+                    <input type="radio" name="quality" value="Very high quality" class="survey-form__quality">Very high
+                    quality
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="High quality" class="survey-form__quality">High
+                    quality
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="Average" class="survey-form__quality">Average
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="Below average" class="survey-form__quality">Below average
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="Unacceptable" class="survey-form__quality">Unacceptable
+                </label>
+            </div>
+
+            <div class="survey-form__item">
+                <p class="survey-form__question">
+                    What do you regularly use the web for?
+                </p>
+                <label>
+                    <input type="checkbox" class="survey-form__web" name="web" value="News">News
+                </label>
+                <label>
+                    <input type="checkbox" class="survey-form__web" name="web" value="Work research">Work research
+                </label>
+                <label>
+                    <input type="checkbox" class="survey-form__web" name="web" value="Personal research">Personal
+                    research
+                </label>
+                <label>
+                    <input type="checkbox" class="survey-form__web" name="web" value="Investments">Investments
+                </label>
+                <label>
+                    <input type="checkbox" class="survey-form__web" name="web" value="Shopping">Shopping
+                </label>
+                <label>
+                    <input type="checkbox" class="survey-form__web" name="web" value="Auctions">Auctions
+                </label>
+                <label>
+                    <input type="checkbox" class="survey-form__web" name="web" value="E-mail">E-mail
+                </label>
+                <label>
+                    <input type="checkbox" class="survey-form__web" name="web" value="Chat/communities">Chat/communities
+                </label>
+                <label>
+                    <input type="checkbox" class="survey-form__web" name="web"
+                        value="web-based address book/calendaring">Web-based
+                    address book/calendaring
+                </label>
+                <label>
+                    <input type="checkbox" class="survey-form__web" name="web" value="Banking">Banking
+                </label>
+                <label>
+                    <input type="checkbox" class="survey-form__web" name="web" value="Other">Other
+                </label>
+            </div>
+
+            <div class="survey-form__item">
+                <label class="survey-form__label" for="improve-info">Please tell us what can be done to improve the
+                    quality
+                    of the information on our
+                    website</label>
+                <textarea class="survey-form__textarea" id="improve-info" name="improve-info" rows="6" cols="50"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="survey-form__button">
+                <button id="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
